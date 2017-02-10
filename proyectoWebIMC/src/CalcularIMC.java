@@ -43,7 +43,6 @@ public class CalcularIMC extends HttpServlet {
 		TipoIMCService timcs = TipoIMCService.traduceIMC(imc);
 		persona.setImc(timcs);
 		PrintWriter pw = response.getWriter().append("<strong>Resultado de su índice de masa corporal (IMC) =</strong> ").append(persona.toString());
-		System.out.println(pw);	
 		
 	}
 
